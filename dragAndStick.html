@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="materials/main menu/homeScreenLogo-07-07.png">
+    <meta name="theme-color" content="#000000">
+    <title>Cadeba</title>
+    <link rel="stylesheet" href="./dragAndStick.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <audio id="powerUp" src="materials/main menu/sounds/preview (mp3cut.net) good.mp3"></audio>
+    <div id="powerWrap">
+        <p>total power:</p>
+        <p id="score">0</p>
+    </div>
+    <div id="cardWrap">
+        <div class="card" id="card1" draggable="true" data-power="2" data-status="notAdded" data-name="queen">
+            <img src="materials/main menu/characters/cards_queen.png" alt="Card 1" class="card-img" draggable="false">
+        </div>
+        <div class="card" id="card2" draggable="true" data-power="1" data-status="notAdded" data-name="priest">
+            <img src="materials/main menu/characters/cards_priest.png" alt="Card 2" class="card-img" draggable="false">
+        </div>
+    </div>
+    <div id="dropWrap">
+        <div class="dropzone" id="dropzone1"></div>
+        <div class="dropzone" id="dropzone2"></div>
+    </div>
+
+    <script src="node_modules/drag-drop-touch/DragDropTouch.js"></script>
+    <script type="module" src="dragAndStick.js"></script>
+</body>
+</html>

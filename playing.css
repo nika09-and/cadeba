@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'StickyFingers';
+    src: url('materials/main menu/fonts/cc_sticky_fingers-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'StickyFingers', sans-serif;
+    color: #e2dfcf;
+}
+
+body {
+    display: flex;
+    background-color: #465455;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for cards */
+#cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Grid layout for cards */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vh;
+    column-gap: 1vw;
+    margin-bottom: 20px;
+}
+
+/* Individual card styling */
+.card {
+    width: 80px;
+    height: 120px;
+    background-color: #5A7071;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Shuffle button */
+#shuffleButton {
+    margin-top: 5vh;
+    height: 8vh;
+    width: 40vw;
+    background-color: #5A7071;
+    font-size: 9vw;
+    font-family: 'StickyFingers', sans-serif;
+    color: #e2dfcf;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Dropzone Sections */
+.dropzone-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+/* Dropzone styling */
+.dropzone {
+    width: 13vw;
+    height: 9vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px dashed #e2dfcf;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropzone:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Score display */
+#score-container {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Buttons container */
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+#dragAndStick {
+    height: 8vh;
+    width: 8vh;
+    background-color: #5A7071;
+    font-size: 9vw;
+    font-family: 'StickyFingers', sans-serif;
+    color: #e2dfcf;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+#dropZoneContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 95%;
+}

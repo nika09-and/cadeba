@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- iOS Home Screen Icon -->
+    <link rel="apple-touch-icon" href="materials/main menu/homeScreenLogo-07-07.png">
+
+     <meta name="theme-color" content="#000000">
+    <title>Cadeba</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <audio id="theme-song" src="materials/main menu/sounds/lashqruli.mp3" loop ></audio>
+    <audio id="buttonSound" src="materials/main menu/sounds/mixkit-drums-of-war-call-2780 (mp3cut.net).wav"></audio>
+    <button id="playButton"></button>
+    <div id="mainMenu">
+      <div id="profile">
+        <img id="profPicture" src="materials/main menu/profile picture.png">
+        <div id="trapezoid">
+          <div id="playerInfo">
+            <h2 id="playerName">Player 1</h2>
+            <p id="mainInfoW"> total wins: 17</p>
+            <p id="mainInfoM"> 1500$</p>
+          </div>
+          <div id="playerIcon">
+            <img src="materials/main menu/player_logo.svg" id="logo">
+          </div>
+        </div>
+      </div>
+      <div id="middleButtons">
+        <img src="materials/main menu/settings_button.svg" id="settingsButton">
+        <img src="materials/main menu/shop_button.svg" id="shopButton">
+      </div>
+      <div id="bottomButtons">
+        <img src="materials/main menu/quesButton.png" id="MQuestButton"/>
+        <img src="materials/main menu/decksButton.png" id="MDeckButton"/>
+        <img src="materials/main menu/playButton.png" id="MPlayButton"/>
+      </div>
+
+    </div>
+    <div id="shop">
+      <div id="backgroundColor">
+        <div id="titles">
+          <h1 id="shopTitle">Avatar</h1>
+          <h1>1500$</h1>
+        </div>
+        <div id="iconsWrap">
+
+          <div id="avatar">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="avatarIcon">
+              <path d="M21.3416 22.854H18.6584L17.2943 18.2854L10.1015 16.0737L10.2142 20.4747L14.938 25.7582L16.7531 24.1608L18.1285 40L5.81736 26.3502L8.00451 19.8492L6.83202 5.86428L9.4363 4.76962C11.5107 12.7339 17.6776 15.5376 17.6776 15.5376L20 12.3094L22.3224 15.5376C22.3224 15.5376 28.4893 12.7339 30.5637 4.76962L33.168 5.86428L31.9955 19.8492L34.1826 26.3502L21.8715 40L23.2469 24.1608L25.062 25.7582L29.7858 20.4747L29.8985 16.0737L22.7058 18.2854L21.3416 22.854ZM35.5242 30.0922L27.0913 38.6596L33.4949 35.532L34.1826 38.2128L40 34.1916L35.5242 30.0922ZM4.47576 30.0922L12.9087 38.6596L6.50507 35.532L5.81736 38.2128L0 34.1916L4.47576 30.0922ZM20 0L27.6099 4.66909C27.6099 4.66909 27.2492 8.57861 22.8298 11.8961L20 6.12119L17.1702 11.8961C12.7508 8.57861 12.3901 4.66909 12.3901 4.66909L20 0Z" fill="#FEF8D4"/>
+            </svg>
+          </div>
+
+          <div id="icons">
+            <svg width="14" height="40" viewBox="0 0 14 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="iconsIcon" >
+              <path d="M6.00226 0V8.51931C6.66686 8.54203 7.33314 8.54203 7.99857 8.51931V0H6.00226ZM0 9.29279V11.886H14V9.29279C9.36189 10.3642 4.59236 10.3533 0 9.29279ZM4.34864 13.459L3.46195 30.6811V34.4004L7.15347 40L10.7327 34.5006L9.65136 13.459H7.77732V34.5797H6.22268V13.459H4.34864Z" fill="#5A7071"/>
+            </svg>
+          </div>
+            
+          <div id="banners">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="bannersIcons">
+              <path d="M21.9909 0V2.53453H18.0083V0H21.9909ZM37.4018 2.99075C37.7031 3.0972 38.0312 3.22055 38.3715 3.37515C38.852 3.59397 39.3195 3.86009 39.6191 4.11355C39.9186 4.367 40 4.55709 40 4.64664C40 4.7362 39.9195 4.92629 39.6191 5.17974C39.3195 5.43319 38.852 5.69932 38.3715 5.91813C38.0312 6.07274 37.7039 6.19609 37.4018 6.30254V2.99075ZM2.59735 2.99075V6.30338C2.29519 6.19693 1.96792 6.07359 1.62854 5.91898C1.14803 5.70016 0.681371 5.43404 0.380944 5.18059C0.0813835 4.92713 0 4.73704 0 4.64749C0 4.55794 0.0805177 4.36785 0.380944 4.11439C0.680505 3.86094 1.14803 3.59481 1.62854 3.376C1.96879 3.22139 2.29605 3.09804 2.59735 2.99159V2.99075ZM35.8434 4.05525V5.23804H31.8608V4.05525H35.8434ZM30.3024 4.05525V28.6892L19.9996 40L9.69676 28.6892V4.05525H30.3024ZM8.13835 4.05525V5.23804H4.15575V4.05525H8.13835ZM26.3198 5.99839H24.7614V27.3594L19.9996 33.1677L15.2378 27.3594V5.99839H13.6794V27.8934L19.9996 35.6026L26.3198 27.8934V5.99839Z" fill="#5A7071"/>
+            </svg>
+          </div>
+          
+          <div id="decks">
+            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="decksIcons">
+              <path d="M31.7812 39.8746L21.4888 35.0996C20.8069 34.7834 20.5108 33.9736 20.8276 33.292L28.1101 17.6524C28.4269 16.9718 29.2383 16.6763 29.9193 16.9916L40.2118 21.7674C40.8937 22.0836 41.1897 22.8935 40.873 23.5733L33.5904 39.2129C33.2728 39.8935 32.4614 40.1891 31.7803 39.8737L31.7812 39.8746ZM6.94435 38.1686L0.111499 22.3274C-0.186295 21.6373 0.133078 20.8369 0.823614 20.5405L4.20724 19.087L8.43418 34.9437C8.83901 36.4592 10.3988 37.363 11.9179 36.959L15.2869 36.0638L8.73456 38.8803C8.04317 39.1767 7.24128 38.8579 6.94435 38.1686ZM9.86963 34.562L5.42603 17.8946C5.23268 17.1691 5.666 16.423 6.39192 16.2308L9.32929 15.4511L8.97539 18.0755C8.7665 19.6298 9.85755 21.0609 11.4164 21.2711L18.3071 22.1982L15.5018 31.63C15.2127 32.6019 15.4699 33.6074 16.0948 34.3165L11.5356 35.527C10.8088 35.72 10.0621 35.2883 9.86877 34.562H9.86963ZM19.229 34.1519L17.8462 33.7418C17.1246 33.5272 16.7137 32.7708 16.9278 32.0505L21.8452 15.5166C22.0593 14.7963 22.8189 14.3862 23.5388 14.599L27.7744 15.8552L27.7847 15.8586L27.7735 15.856C27.348 16.136 26.9932 16.5341 26.7636 17.0278L19.4802 32.6682C19.2566 33.1499 19.1789 33.6608 19.229 34.1519ZM18.7361 20.7602L11.6158 19.8021C10.8709 19.7013 10.347 19.0163 10.4471 18.2719L12.7552 1.17884C12.8553 0.435284 13.5424 -0.0877017 14.2865 0.0122428L25.5362 1.5252C26.2811 1.626 26.8042 2.31097 26.704 3.05452L25.2841 13.5702L23.9609 13.1782C22.4529 12.7302 20.8681 13.59 20.4219 15.0935L18.737 20.7585L18.7361 20.7602Z" fill="#5A7071"/>
+            </svg>
+          </div>
+          
+          <div id="chests">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="chestsIcons">
+              <path d="M28.7489 0L13.96 21.4965L14.0894 21.5857L16.7927 23.4649L31.5951 1.94481L28.7489 0ZM36.3641 5.24062C34.6594 7.71858 32.6334 7.18626 30.5931 5.99024L26.4761 12.1287C28.2754 13.5227 29.559 15.1314 28.048 17.3272L31.6813 19.8094L34.1259 16.2584L32.8812 15.4869C32.6132 15.6418 32.302 15.732 31.9697 15.732C30.9677 15.732 30.1543 14.9217 30.1543 13.9236C30.1543 12.9255 30.9677 12.1178 31.9697 12.1178C32.9717 12.1178 33.7826 12.9255 33.7826 13.9236C33.7826 13.9404 33.7809 13.9573 33.78 13.9733L35.1253 14.808L36.6423 12.5995L33.4553 10.6202L34.388 9.1277L35.6513 9.91185L36.5044 8.54822L38.5549 9.81921L40 7.71858L36.3641 5.23893V5.24062ZM10.5456 21.2463C10.5194 21.2471 10.4924 21.248 10.4662 21.2514C10.396 21.2598 10.3266 21.2749 10.2522 21.2985C9.95543 21.392 9.62651 21.6413 9.39651 21.9673C9.16652 22.2933 9.04476 22.6824 9.05829 22.9881C9.07182 23.2947 9.16483 23.5221 9.50221 23.7563L15.9784 28.2599C16.2557 28.4528 16.4629 28.4578 16.7495 28.3576C17.037 28.2574 17.3685 27.9988 17.6052 27.6653C17.842 27.3317 17.9731 26.9359 17.9697 26.6385C17.9663 26.3412 17.8944 26.1509 17.6002 25.9462L11.1215 21.4434C10.9058 21.2935 10.7274 21.2396 10.5456 21.2455V21.2463ZM5.73099 24.9649C3.67205 24.9995 1.88368 25.7668 0.85632 27.2601C-0.576911 29.3439 -0.147365 32.2927 1.66975 34.8642C1.51417 35.2617 1.42623 35.693 1.42623 36.1436C1.42623 38.101 3.03872 39.7072 5.00381 39.7072C5.73438 39.7072 6.41506 39.4865 6.98327 39.1075C10.637 40.6649 14.4302 40.1781 16.139 37.6942C17.7202 35.3965 17.059 32.0586 14.7549 29.3296L9.42019 25.6211C8.23471 25.1907 7.04669 24.9725 5.93224 24.9658C5.86544 24.9658 5.79779 24.9649 5.73099 24.9658V24.9649ZM5.00466 34.1558C6.11573 34.1558 6.99934 35.036 6.99934 36.1427C6.99934 37.2495 6.11573 38.1322 5.00466 38.1322C3.89358 38.1322 3.00743 37.2495 3.00743 36.1427C3.00743 35.036 3.89358 34.1558 5.00466 34.1558Z" fill="#5A7071"/>
+            </svg>
+          </div>
+        </div>
+        <div id="avatarProducts">
+          <img src="materials/main menu/avatarProduct.svg" alt="">
+          <img src="materials/main menu/avatarProduct.svg" alt="">
+          <img src="materials/main menu/avatarProduct.svg" alt="">
+          <img src="materials/main menu/avatarProduct.svg" alt="">
+          <img src="materials/main menu/avatarProduct.svg" alt="">
+          <img src="materials/main menu/avatarProduct.svg" alt="">
+          <img src="materials/main menu/avatarProduct.svg" alt="">
+          <img src="materials/main menu/avatarProduct.svg" alt="">
+          <img src="materials/main menu/avatarProduct.svg" alt="">
+        </div>
+        <div id="iconProducts">
+          <img src="materials/main menu/iconProduct.svg" alt="">
+          <img src="materials/main menu/iconProduct.svg" alt="">
+          <img src="materials/main menu/iconProduct.svg" alt="">
+          <img src="materials/main menu/iconProduct.svg" alt="">
+          <img src="materials/main menu/iconProduct.svg" alt="">
+          <img src="materials/main menu/iconProduct.svg" alt="">
+          <img src="materials/main menu/iconProduct.svg" alt="">
+          <img src="materials/main menu/iconProduct.svg" alt="">
+          <img src="materials/main menu/iconProduct.svg" alt="">
+        </div>
+        <div id="bannerProducts">
+          <img src="materials/main menu/bannerProduct.svg" alt="">
+          <img src="materials/main menu/bannerProduct.svg" alt="">
+          <img src="materials/main menu/bannerProduct.svg" alt="">
+          <img src="materials/main menu/bannerProduct.svg" alt="">
+          <img src="materials/main menu/bannerProduct.svg" alt="">
+          <img src="materials/main menu/bannerProduct.svg" alt="">
+          <img src="materials/main menu/bannerProduct.svg" alt="">
+          <img src="materials/main menu/bannerProduct.svg" alt="">
+          <img src="materials/main menu/bannerProduct.svg" alt="">
+        </div>
+        <div id="deckProducts">
+          <img src="materials/main menu/deckProduct.svg" alt="">
+          <img src="materials/main menu/deckProduct.svg" alt="">
+          <img src="materials/main menu/deckProduct.svg" alt="">
+          <img src="materials/main menu/deckProduct.svg" alt="">
+          <img src="materials/main menu/deckProduct.svg" alt="">
+          <img src="materials/main menu/deckProduct.svg" alt="">
+          <img src="materials/main menu/deckProduct.svg" alt="">
+          <img src="materials/main menu/deckProduct.svg" alt="">
+          <img src="materials/main menu/deckProduct.svg" alt="">
+        </div>
+        <div id="chestProducts">
+          <img src="materials/main menu/chestProduct.svg" alt="">
+          <img src="materials/main menu/chestProduct.svg" alt="">
+          <img src="materials/main menu/chestProduct.svg" alt="">
+          <img src="materials/main menu/chestProduct.svg" alt="">
+          <img src="materials/main menu/chestProduct.svg" alt="">
+          <img src="materials/main menu/chestProduct.svg" alt="">
+          <img src="materials/main menu/chestProduct.svg" alt="">
+          <img src="materials/main menu/chestProduct.svg" alt="">
+          <img src="materials/main menu/chestProduct.svg" alt="">
+        </div>
+        <div id="buttonWrap">
+          <img src="materials/main menu/exit.svg" id="exit">
+        </div>
+      </div>
+    </div>
+    <div id="apology">
+      <div id="apologyWindow">
+        <p id="apologyText">sorry, this feature will soon be added, thank you for your patience.</p>
+        <img src="materials/main menu/apologyButton.svg" id="apologyButton">
+      </div>
+    </div>
+    <script src="home.js"></script>
+  </body>
+</html>
