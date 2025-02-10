@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'StickyFingers';
+    src: url('materials/main menu/fonts/cc_sticky_fingers-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'StickyFingers', sans-serif;
+    color: #e2dfcf;
+}
+
+p{
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: end;
+    background-image: url('materials/main menu/battlegroundBackground-08.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+    height: 30.5vh;
+    width: 68vw;
+}
+
+#resourcesContainer{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+    height: 30.5vh;
+    width: 80vw;
+}
+
+#buildingHelper{
+    display: flex;
+    height: 25%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#helper1,#helper2{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 45%;
+    border-radius: 8px;
+    background-color: #1C6D89;
+}
+
+#helperHeader{
+    font-weight: 500;
+}
+
+#logo1,#wood1,#rock1,#iron1,#logo2,#wood2,#rock2,#iron2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+#ironTracker1,#rockTracker1,#woodTracker1{
+    /* if anything will be needed about goal info */
+}
+
+#buildingResources{
+    display: grid;
+    height: 75%;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 2vw;
+    row-gap: 1vh;
+}
+
+
+/*test div must be deleted=============================================================================*/
+#testDiv{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vh;
+    column-gap: 3vw;
+}
+
+
+.card {
+    width: 80px;
+    height: 120px;
+    background-color: #5A7071;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#shuffleButton {
+    display: none;
+}
+
+.dropzone-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.dropzone {
+    width: 13vw;
+    height: 9vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px dashed #e2dfcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropzone:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#dropZoneContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content:end;
+}
+
+#dragAndStick {
+    height: 8vh;
+    width: 8vh;
+    background-color: #5A7071;
+    font-size: 9vw;
+    font-family: 'StickyFingers', sans-serif;
+    color: #e2dfcf;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+#dropZoneContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 95%;
+}
+
+#loadingScreen {
+    display: flex;
+    position: fixed;
+    background-image: url('materials/main menu/loading\ screen.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    z-index: 10;
+}
+
+
+#loadingIcon{
+    width: 10vw;
+    height: 5vh;
+    bottom: 5vh;
+    right: 10vw;
+}
+
+#loadingHeader{
+    position: absolute;
+    font-weight: 200;
+    font-size: 10vw;
+    left: 5vw;
+    margin-top: 5vh;
+}
+
+#adviceText{
+    position: absolute;
+    margin-top: 8%;
+    width: 90vw;
+    font-size: 5vw;
+    font-weight: 100;
+    left: 5vw;
+    top: 9vh;
+}
+
+#laodingWindow{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    bottom: 3vh;
+    left: 5vw;
+}
+
+#loadingText{
+    font-size: 10vw;
+}
+
+#finishButton{
+    margin-bottom: 5vh;
+}
+
+#gameScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    width: 100vw;
+}
+
+#profiles{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+#profile1,#profile2{
+    display: flex;
+    flex-direction: row;
+    width: 38vw;
+    height: 9vh;
+}
+
+#profile1{
+    justify-content: end;
+    background-image: url('materials/main menu/profile_banner_1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#profile2{
+    justify-content: start;
+    background-image: url('materials/main menu/profile_banner_2.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#profileInfo{
+    display: flex;
+    margin-right: 2vw;
+    flex-direction: column;
+    align-items:end;
+    justify-content: center;
+}
+
+#playerName{
+    margin: 0;
+    font-size: 5vw;
+    color: #ffac05;
+}
+
+#score{
+    color: #333333;
+    margin: 0;
+    font-size: 10vw;
+    margin-right: 3vw;
+    margin-top: 1vh;
+}
+
+#locations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+#location1,#location2,#location3{
+    width: 25vw;
+    height: 20vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px dashed #e2dfcf;
+}
+
+#timerContainer{
+    display: flex;
+    flex-direction: row;
+    font-size: 9vw;
+}
+
+#starterScreen{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#starterContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#starterHeader{
+    font-size: 10vw;
+}
+
+#starterCountDown{
+    font-size: 20vw;
+}
+
+#bottomButtons{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    margin-bottom: 5vh;
+}

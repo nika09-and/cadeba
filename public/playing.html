@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- iOS Home Screen Icon -->
+    <link rel="apple-touch-icon" href="materials/main menu/homeScreenLogo-07-07.png">
+
+    <meta name="theme-color" content="#000000">
+    <title>Cadeba</title>
+    <link rel="stylesheet" href="./playing.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <audio id="powerUp" src="materials/main menu/sounds/preview (mp3cut.net) good.mp3"></audio>
+    <audio id="begin" src="materials/main menu/sounds/Male Let The Battle Begin.mp3"></audio>
+    <audio id="beginDrum" src="materials/main menu/sounds/begin sound.wav"></audio>
+    <div id="loadingScreen">
+      <h1 id="loadingHeader">cadeba</h1>
+      <p id="adviceText">while building sometimes aiming low gets you victory faster, time was, time is and time will be the key to the world!</p>
+      <div id="laodingWindow">
+        <p id="loadingText">loading</p>
+        <img id="loadingIcon" src="materials/main menu/Rolling@1x-1.0s-200px-200px.gif">
+      </div>
+    </div>
+
+    <div id="starterScreen">
+      <div id="starterContent">
+        <h1 id="starterHeader">The game starts in</h1>
+        <p id="starterCountDown">3</p>
+      </div>
+    </div>
+    
+    <div id="gameScreen">
+      <div id="profiles">
+        <div id="profile1">
+          <div id="profileInfo">
+            <P id="playerName">kupingard</P>
+            <p id="score">0</p>
+          </div>
+        </div>
+        <div id="timerContainer">
+          <p id="timerFake">00:</p>
+          <p id="timer">30</p>
+        </div>
+        <div id="profile2">
+          <div id="profileInfo">
+            
+          </div>
+        </div>
+      </div>
+
+      <div id="locations">
+        <div id="location1"></div>
+        <div id="location2"></div>
+        <div id="location3"></div>
+      </div>
+
+      <button id="shuffleButton">Shuffle</button>
+    <!-- Dropzone Sections -->
+    <div id="dropZoneContainer">
+      <div class="dropzone-section" id="needed">
+        <div class="dropzone" id="dropzone1"></div>
+        <div class="dropzone" id="dropzone2"></div>
+      </div>
+      <div class="dropzone-section" id="needed">
+        <div class="dropzone" id="dropzone3"></div>
+        <div class="dropzone" id="dropzone4"></div>
+      </div>
+      <div class="dropzone-section" id="needed">
+        <div class="dropzone" id="dropzone5"></div>
+        <div class="dropzone" id="dropzone6"></div>
+      </div>
+    </div>
+    
+      <div id="cards-container">
+        <div id="cards"></div>
+      </div>
+
+      <div id="resourcesContainer">
+        <div id="buildingHelper">
+          <div id="helper1">
+            <div id="logo1"></div>
+            <div id="wood1"><p id="helperHeader">wood</p><p id="woodTracker1">0/0</p></div>
+            <div id="rock1"><p id="helperHeader">rock</p><p id="rockTracker1">0/0</p></div>
+            <div id="iron1"><p id="helperHeader">iron</p><p id="ironTracker1">0/0</p></div>
+          </div>
+          <div id="helper2">
+            <div id="logo2"></div>
+            <div id="wood2"></div>
+            <div id="rock2"></div>
+            <div id="iron2"></div>
+          </div>
+        </div>
+        <div id="buildingResources">
+          <img src="materials/main menu/resources_iron.png" id="testDiv">
+          <img src="materials/main menu/resources_stone.png" id="testDiv">
+          <img src="materials/main menu/resources_wood.png" id="testDiv">
+          <img src="materials/main menu/resources_wood.png" id="testDiv">
+          <img src="materials/main menu/resources_stone.png" id="testDiv">
+          <img src="materials/main menu/resources_stone.png" id="testDiv">
+          <img src="materials/main menu/resources_iron.png" id="testDiv">
+          <img src="materials/main menu/resources_wood.png" id="testDiv">
+          <img src="materials/main menu/resources_wood.png" id="testDiv">
+        </div>
+      </div>    
+  
+      <audio id="powerUp" src="materials/sounds/powerup.mp3"></audio>
+  
+      <div id="buttons">
+        <img id="finishButton" src="materials/main menu/inactive_finish.svg">
+      </div>
+
+      <div id="bottomButtons">
+        <img src="materials/main menu/trade.svg" id="trade"/>
+        <img src="materials/main menu/pass.svg" id="pass"/>
+        <img src="materials/main menu/build.svg" id="build"/>
+      </div>
+
+    </div>
+
+
+    
+
+    <script type="module" src="playing.js"></script>
+    <script src="node_modules/drag-drop-touch/DragDropTouch.js"></script>
+  </body>
+</html>

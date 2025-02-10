@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "@capacitor/cli": "^7.0.1",
+    "@capacitor/core": "^7.0.1",
+    "@capacitor/ios": "^7.0.1",
     "drag-drop-touch": "^1.3.1"
   }
 }

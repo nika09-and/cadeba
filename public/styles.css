@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'StickyFingers';
+    src: url('materials/main menu/fonts/cc_sticky_fingers-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html{
+    font-family: 'StickyFingers', sans-serif;
+    color: #e2dfcf;
+}
+
+#mainMenu{
+    display: block;
+}
+
+body {
+    display: flex;
+    width: 393px;
+    height: 852px;
+    background-image: url('materials/main menu/main_menu_background-05.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#playButton{
+    display: none;
+}
+
+#profile{
+    display: flex;
+    height: 89px;
+    width: 100vw;
+    margin-top: 76px;
+    flex-direction: row;
+}
+
+#profPicture{
+    height: 89px;
+    width: auto;
+}
+
+#trapezoid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 0;
+    background-image: url('materials/main menu/trapezia.svg');
+    background-size: cover;
+    width: 80vw;
+}
+
+#playerInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+#playerIcon{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    margin-right: 11vw;
+}
+
+#playerName{
+    margin: 0;
+    font-size: 8vw;
+    font-weight: 500;
+    margin-left: 12vw;
+    margin-top: 1vh;
+}
+
+#mainInfoW,#mainInfoM{
+ margin: 0;
+ font-weight: -1000;
+ font-size: 4vw;
+ margin-left: 12vw;
+}
+
+#mainInfoM{
+    margin-bottom: 1vh;
+}
+
+
+#middleButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12vh;
+}
+
+#bottomButtons{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    bottom: 9vh;
+}
+
+#shop{
+    display: none;
+    background-image: url('materials/main menu/main_menu_background-05.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#MQuestButton,#MPlayButton,#exit{
+    width: 135px;
+    height: 70px;
+    transition: all 0.1s ease;
+}
+
+#MQuestButton:active,#MPlayButton:active,#exit:active{
+    width: 130px;
+    height: 67px;
+}
+
+#settingsButton,#shopButton{
+    width: 83px;
+    height: 70px;
+    transition: all 0.1s ease;
+}
+
+#settingsButton:active,#shopButton:active{
+    width: 75px;
+}
+
+#backgroundColor,#apology{
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+}
+
+#titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6vh;
+    padding-right: 7vw;
+    padding-left: 7vw;
+}
+
+h1{
+    font-size: 10vw;
+    font-weight: 50;
+}
+
+#iconsWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 7vw;
+    padding-left: 7vw;
+}
+
+#avatar,#icons,#banners,#decks,#chests{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15vw;
+    height: 15vw;
+}
+
+#avatarProducts,#iconProducts,#bannerProducts,#deckProducts,#chestProducts{
+    margin-top: 5vh;
+    padding-right: 7vw;
+    padding-left: 7vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2vh;
+    column-gap: 1vw;
+}
+
+#buttonWrap{
+    position: absolute;
+    bottom: 8vh;
+}
+
+#iconProducts,#bannerProducts,#deckProducts,#chestProducts{
+    display: none;
+}
+
+#apology{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#apologyWindow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70vw;
+    height: 23vh;
+    background-color: #5A7071;
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+#apologyText{
+    font-size: 7vw;
+    margin-bottom: 0;
+    margin-top: 3vh;
+}
+
+#apologyButton{
+    margin-bottom: 2vh;
+}
+

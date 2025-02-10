@@ -1,0 +1,6 @@
+{
+  "appId": "com.nika.cadeba",
+  "appName": "cadeba",
+  "webDir": "public",
+  "bundledWebRuntime": false
+}
